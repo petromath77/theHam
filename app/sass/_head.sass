@@ -1,0 +1,45 @@
+header
+	background: url("../img/head_back.jpg") center 0px fixed
+	min-height: 700px
+	height: 100vh
+	background-size: cover
+	opacity: 1
+.head_row
+	background-color: rgba(0, 0, 0, 0.6)
+	padding: 20px 0
+.head_wrap	
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+.logo_wrap
+
+.menu_wrap
+	ul
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		list-style: none
+		margin-top: 32px
+		li
+			+sect_h1($default-bold, 18px, 18px, 2px, uppercase)
+			margin-left: 15px
+			a
+				position: relative
+				color: $font_head
+				text-decoration: none
+				display: block
+				+transition(all, 0.5s, ease-in-out)
+				&::after
+					content: ""
+					+transition(all, 0.5s, ease-in-out)
+				&:hover
+					color: $font_head_hov
+				&:hover
+					&::after
+						position: absolute
+						top: 30px
+						content: ""
+						display: block
+						border: 2px solid $font_head_hov
+						width: 100%
+						+transition(all, 0.5s, ease-in-out)

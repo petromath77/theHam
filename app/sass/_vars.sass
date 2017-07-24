@@ -1,2 +1,22 @@
 $default-font: "roboto-example", sans-serif
-$accent: orange
+$default-bold: "roboto-example-bold", sans-serif
+$font_col: #777777
+$font_head: #b8b8b8
+$font_head_hov: #9625de
+
+=sect_h1($font_fam, $font_size, $font_height, $lett_space, $txt_trans)
+	font-family: $font_fam
+	font-size: $font_size
+	line-height: $font_height
+	letter-spacing: $lett_space
+	text-transform: $txt_trans
+
+=sect_p($font_fam, $font_size, $font_height)
+	font-family: $font_fam
+	font-size: $font_size
+	line-height: $font_height
+
+=transition($trans_prop, $trans_durat, $trans_func)
+	transition-property: $trans_prop
+	transition-duration: $trans_durat
+	transition-timing-function: $trans_func
