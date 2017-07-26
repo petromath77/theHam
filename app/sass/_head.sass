@@ -21,8 +21,8 @@ header
 		list-style: none
 		margin-top: 32px
 		li
-			+sect_h1($default-bold, 18px, 18px, 2px, uppercase)
-			margin-left: 15px
+			+sect_h1($default-bold, 17px, 17px, 2px, uppercase)
+			margin-left: 20px
 			a
 				position: relative
 				color: $font_head
@@ -37,9 +37,39 @@ header
 				&:hover
 					&::after
 						position: absolute
-						top: 30px
+						top: 55px
 						content: ""
 						display: block
 						border: 2px solid $font_head_hov
 						width: 100%
 						+transition(all, 0.5s, ease-in-out)
+.header_text
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 370px
+	h1
+		color: #fff 
+		margin: 0 0 20px
+		span
+			text-transform: none
+	h4
+		color: $font_main
+		margin-bottom: 70px
+.lilac
+	text-transform: none
+	color: $font_head_hov
+.accuant
+	background-color: $col_gr
+	display: block
+	padding: 12px 25px
+	+sect_p($default-bold, 16px, 16px)
+	letter-spacing: 1px
+	color: $col_wh
+	border-radius: 5px
+	+transition(all, 0.5s, ease-in-out)
+	&:hover,
+	&:focus
+		background-color: $font_head_hov
+		text-decoration: none
+		color: $col_wh

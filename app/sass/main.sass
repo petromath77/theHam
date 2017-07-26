@@ -42,5 +42,11 @@ body
 	display: block
 	max-width: 100%
 	height: auto
+h1
+	+sect_h1($default-bold, 60px, 60px, 2px, uppercase)
+h4
+	+sect_h1($default-bold, 30px, 30px, 2px, none)
+	margin: 0
+
 
 @import "media" // Всегда в конце
