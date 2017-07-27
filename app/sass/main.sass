@@ -2,6 +2,7 @@
 @import "libs"
 @import "vars"
 @import "head"
+@import "advants"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -37,6 +38,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+	color: $font_col
 
 .img-responsive
 	display: block
@@ -44,9 +46,37 @@ body
 	height: auto
 h1
 	+sect_h1($default-bold, 60px, 60px, 2px, uppercase)
+h2
+	+sect_h1($default-bold, 40px, 40px, 2px, none)
+	text-align: center
+	color: $font_col
+	position: relative
+	display: inline-block
+	margin-bottom: 70px
+	&::before
+		content: ""
+		position: absolute
+		border-top: 1px solid $font_head_hov
+		width: 50%
+		top: 50px
+		left: 0%
+	&::after
+		content: ""
+		position: absolute
+		border-top: 1px solid $font_head_hov
+		width: 50%
+		top: 60px
+		left: 50%
+
+h3
+	+sect_h1($default-font, 30px, 30px, 2px, none)
+	margin: 0
 h4
-	+sect_h1($default-bold, 30px, 30px, 2px, none)
+	+sect_h1($default-font, 25px, 25px, 1px, none)
 	margin: 0
 
+section
+
+	margin: 40px 0 50px
 
 @import "media" // Всегда в конце
