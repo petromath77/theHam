@@ -1,0 +1,52 @@
+.work_menu
+	display: flex
+	flex-direction: row
+	justify-content: center
+	list-style: none
+	margin-bottom: 50px
+	li
+		background-color: #f1f1f1
+		border-top: 1px solid #ccc
+		border-bottom: 1px solid #ccc
+		border-left: 1px solid #ccc
+		padding: 10px 25px
+		position: relative
+		&:last-child
+			border-right: 1px solid #ccc
+		a
+			text-decoration: none
+			font-weight: bold
+			color: $font_col
+			+transition(all, 0.5s, ease-in-out)
+			&:focus
+				color: $col_gr
+		&::after
+			content: ""
+			+transition(all, 0.5s, ease-in-out)
+		&:hover,
+		&:focus
+
+			&::after
+				content: ""
+				position: absolute
+				border-top: 2px solid $col_gr
+				top: -2px
+				left: 0
+				width: 100%
+		&:hover,
+		&:focus
+			a
+				color: $col_gr
+
+
+
+.work_img_wrap
+	display: flex
+	flex-direction: row
+	justify-content: left
+	flex-wrap: wrap
+.work_item
+	width: 25%
+	img
+		width: 100%
+		cursor: pointer
