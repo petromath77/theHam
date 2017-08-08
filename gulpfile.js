@@ -29,6 +29,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/sexy-tabs/sexy-tabs.js',
 		'app/libs/mixitup/mixitup.min.js',
+		'app/libs/carousel/carousel.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

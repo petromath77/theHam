@@ -49,12 +49,13 @@ body
 	height: auto
 h1
 	+sect_h1($default-bold, 60px, 60px, 2px, uppercase)
+
 h2
 	+sect_h1($default-bold, 40px, 40px, 2px, none)
 	color: $font_col
 	position: relative
 	display: inline-block
-	margin-bottom: 70px
+	margin: 0 0 100px
 	&::before
 		content: ""
 		position: absolute
@@ -82,9 +83,12 @@ h5
 	margin: 0
 	text-align: center
 section
-	padding: 40px 0 50px
+	padding: 70px 0 80px
 	text-align: center
-
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
 .clear
 	clear: both
 
