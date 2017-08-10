@@ -1,8 +1,51 @@
 .team_wrap
+	width: 100%
 	display: flex
 	flex-direction: row
 	justify-content: space-between
 	flex-wrap: wrap
 	margin-top: 50px
 .team_descr
-	background-color: #ccc
+	background-color: $font_head_hov
+	width: 22%
+	+transition(all, 0.5s, ease-in-out)
+	&:hover
+		background-color: $col_gr
+		p
+			color: $font_head_hov
+	img
+		width: 100%
+		height: auto
+		margin-bottom: 30px
+	h5
+		text-align: left
+		font-size: 16px
+		line-height: 16px
+		font-weight: bold
+		margin: 0 0 10px 20px
+		color: $col_wh
+	p
+		text-align: left
+		font-size: 14px
+		line-height: 14px
+		margin: 0 0 20px 20px
+		color: $col_gr
+		p
+.soc_wrap
+	width: 100%
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	border-top: 1px solid $col_wh
+	a
+		width: 25%
+		padding: 10px 0
+		text-align: center
+		border-right: 1px solid $col_wh
+		&:last-child
+			border-right: none
+	i
+		font-size: 20px
+		line-height: 20px
+		color: $col_wh
+
