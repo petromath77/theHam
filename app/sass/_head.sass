@@ -4,8 +4,13 @@ header
 	height: 100vh
 	background-size: cover
 .head_row
-	background-color: rgba(0, 0, 0, 0.6)
+	position: fixed
+	top: 0px
+	width: 100%
 	padding: 20px 0
+	background-color: rgba(0, 0, 0, 0.6)
+	z-index: 99  
+    
 .head_wrap	
 	display: flex
 	flex-direction: row
@@ -46,7 +51,7 @@ header
 	display: flex
 	flex-direction: column
 	align-items: center
-	margin-top: 370px
+	padding-top: 370px
 	h1
 		color: #fff 
 		margin: 0 0 20px
@@ -66,9 +71,11 @@ header
 	letter-spacing: 1px
 	color: $col_wh
 	border-radius: 5px
+	border-bottom: 4px solid $font_head_bl
 	+transition(all, 0.5s, ease-in-out)
 	&:hover,
 	&:focus
 		background-color: $col_gr
+		border-bottom: 4px solid $col_gr_bl
 		text-decoration: none
 		color: $col_wh

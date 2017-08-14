@@ -30,7 +30,7 @@
 
 <body>
 	<header>
-		<div class="head_row">
+		<div class="head_row" id="home">
 			<div class="container">
 				<div class="head_wrap">
 					<div class="logo_wrap">
@@ -40,7 +40,7 @@
 					</div>
 					<div class="menu_wrap">
 						<ul>
-							<li><a href="#">Home</a></li>
+							<li><a href="#home">Home</a></li>
 							<li><a href="#">About</a></li>
 							<li><a href="#">Work</a></li>
 							<li><a href="#">Testimonials</a></li>
@@ -351,8 +351,33 @@
 			</div>
 		</div>
 	</section>
+	<section class="in_touch">
+		<div class="container">
+			<h2>Keep In Touch</h2>
+			<div class="in_touch_wrap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d450.88218525014184!2d2.3411914768232562!3d48.852254243758445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47e671de60e465f1%3A0x402f26e1c0980919!2zOC0xMCBSdWUgRGFudG9uLCA3NTAwNiBQYXJpcywg0KTRgNCw0L3RhtC40Y8!3m2!1d48.852384099999995!2d2.3415551999999997!5e0!3m2!1sru!2sby!4v1502717469862" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="form_wrap">
+					<form action="#" class="main_form" method="post" target="_blank" novalidate>
+						<label class="form-group">
+							<input type="text" name="name" placeholder="Your name"  data-validation-required-message="This field is necessary!"  required />
+							<span class="help-block text-danger" ></span>
+						</label>
+						<label class="form-group">
+							<input type="text" name="email" placeholder="Your email"  data-validation-required-message="Incorrect email!" data-validation-email-message="email" required />
+							<span class="help-block text-danger" ></span>
+						</label>
+						<label class="form-group">
+							<textarea  name ="message" placeholder="Your message"  data-validation-required-message="This field is necessary!" required /></textarea>
+							<span class="help-block text-danger" ></span>
+						</label>
+						<button>Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 	<footer>
-		
+		<p>Copyright 2015 <span>theHam</span> | All Rights Reserved</p>
 	</footer>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
