@@ -6,22 +6,69 @@
 @media only screen and (max-width : 1200px)
 	/**/
 
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
-
-
+	.menu_wrap
+		display: block
+	.advants_item
+		width: 28%
+	.work_item
+		width: 33%
+/* Small Devices, Tablets */
+@media only screen and (max-width : 850px)
+	.head_wrap
+		flex-direction: column
+	.menu_wrap
+		display: none
+		ul
+			flex-direction: column
+			li
+				margin-bottom: 20px
+				a
+					&:hover,
+					&:focus
+						&::after
+							border: 0
+	.menu_trigger
+		display: block
+	.left-pos 
+		margin-left: -10em 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
-
-
+	.header_text
+		h1
+			font-size: 50px
+			line-height: 50px
+		h3
+			font-size: 25px
+			line-height: 25px
+	.advants_item
+		width: 44%	
+		margin-left: 0px
+	.work_item
+		width: 50%
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 530px)
+	.work_menu
+		flex-direction: column
+		li 
+			border-bottom: none
+			border-right: 1px solid #ccc
+			&:last-child
+				border-bottom: 1px solid #ccc
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
-
+	.header_text
+		h1
+			font-size: 30px
+			line-height: 30px
+		h3
+			font-size: 17px
+			line-height: 17px
+	.advants_item
+		width: 100%	
+	.work_item
+		width: 100%
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
@@ -51,5 +98,4 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	/**/
-
+ /**//**/

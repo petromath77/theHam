@@ -17,6 +17,7 @@ header
 	flex-direction: row
 	justify-content: space-between
 .menu_trigger
+	display: none
 	position: absolute
 	top: 17px
 	right: 0
@@ -26,6 +27,7 @@ header
 		color: $font_menu
 
 .menu_wrap
+	display: block!important
 	ul
 		display: flex
 		flex-direction: row
@@ -44,9 +46,11 @@ header
 				&::after
 					content: ""
 					+transition(all, 0.5s, ease-in-out)
-				&:hover
+				&:hover,
+				&:focus
 					color: $font_head_hov
-				&:hover
+				&:hover,
+				&:focus
 					&::after
 						position: absolute
 						top: 55px
