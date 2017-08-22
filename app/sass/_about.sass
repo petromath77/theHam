@@ -16,14 +16,16 @@
 	color: #888
 	-webkit-font-smoothing: antialiased
 .tabs 
-	display: table
+	display: flex
+	flex-direction: row
+	justify-content: left
+	flex-wrap: wrap
 	position: relative
 	overflow: hidden
 	margin: 0
 	padding: 0
 	width: 100%
 	li 
-		float: left
 		line-height: 38px
 		overflow: hidden
 		padding: 0
@@ -49,7 +51,9 @@
 	h4 
 		font-weight: bold
 		color: $col_gr
-    	font-size: 20px
+		font-size: 20px
+		line-height: 20px
+		margin-bottom: 10px
 	img 
 		width: 50%
 		float: left
