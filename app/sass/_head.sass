@@ -17,29 +17,37 @@ header
 	flex-direction: row
 	justify-content: space-between
 .menu_trigger
-	display: none
+	display: block
 	position: absolute
 	top: 17px
 	right: 0
+	z-index: 3000
 	i
 		font-size: 45px
 		line-height: 45px
 		color: $font_menu
-
+.menu_cont
+	display: block
+	position: absolute
+	background-color: rgba(0, 0, 0, 0.85)
+	top: 0
+	left: 0
+	width: 100%
+	height: 100vh
 .menu_wrap
-	display: block!important
 	ul
 		display: flex
-		flex-direction: row
-		justify-content: space-between
+		flex-direction: column
+		justify-content: center
 		list-style: none
-		margin-top: 32px
+		text-align: center
+		margin-top: 200px
 		li
-			+sect_h1($default-bold, 17px, 17px, 2px, uppercase)
-			margin-left: 20px
+			+sect_h1($default-bold, 20px, 20px, 4px, uppercase)
+			margin-bottom: 40px
 			a
 				position: relative
-				color: $font_menu
+				color: $col_wh
 				text-decoration: none
 				display: block
 				+transition(all, 0.5s, ease-in-out)
@@ -49,16 +57,6 @@ header
 				&:hover,
 				&:focus
 					color: $font_head_hov
-				&:hover,
-				&:focus
-					&::after
-						position: absolute
-						top: 55px
-						content: ""
-						display: block
-						border: 2px solid $font_head_hov
-						width: 100%
-						+transition(all, 0.5s, ease-in-out)
 .header_text
 	display: flex
 	flex-direction: column

@@ -4,17 +4,16 @@ $(function() {
 
 	$('.mix_wrap').mixItUp();
 
+	$("a[href*='#']").mPageScroll2id();
+
 	$('.work_menu li').on('click', function(){
 		$('.work_menu li').removeClass('active');
 		$(this).addClass('active');
 	});
 
-	//$('.menu_trigger').on('click', function(){
-		//$('.menu_wrap').slideToggle(1000);
-	//});
-
-
-
+	$('.menu_trigger, .menu_wrap li').on('click', function(){
+		$('.menu_cont').fadeToggle();
+	});
 
 
 	$(window).scroll('on', function(event){
