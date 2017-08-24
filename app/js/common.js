@@ -12,9 +12,20 @@ $(function() {
 	});
 
 	$('.menu_trigger, .menu_wrap li').on('click', function(){
-		$('.menu_cont').fadeToggle();
+		if( $('.menu_cont').css('opacity') === '0'){
+			$('.menu_cont').animate({
+				opacity: "1"
+			}, 1000);
+			$('.menu_cont').css('display','block');
+		}else{
+			$('.menu_cont').animate({
+				opacity: "0",
+			}, 1000);
+			$('.menu_cont').css('display','none');
+		}
 	});
 
+	$(function () { $('input, select, textarea').not('[type=submit]').jqBootstrapValidation(); } );
 
 	$(window).scroll('on', function(event){
 			if(window.pageYOffset > 50 ){
