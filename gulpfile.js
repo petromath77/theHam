@@ -32,7 +32,8 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/carousel/carousel.js',
 		'app/libs/scroll2Id/jquery.PageScroll2id.min.js',
 		'app/libs/jqBootstrapValidation/jqBootstrapValidation.js',
-		'app/js/common.min.js', // Всегда в конце
+		'app/libs/animate_css/animate_css.js',
+		'app/js/common.min.js' // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)
