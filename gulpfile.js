@@ -32,6 +32,8 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/carousel/carousel.js',
 		'app/libs/scroll2Id/jquery.PageScroll2id.min.js',
 		'app/libs/jqBootstrapValidation/jqBootstrapValidation.js',
+		'app/libs/jQmigrate/jqmigrate.js',
+		'app/libs/waypoints/waypoints.min.js',		
 		'app/libs/animate_css/animate_css.js',
 		'app/js/common.min.js' // Всегда в конце
 		])

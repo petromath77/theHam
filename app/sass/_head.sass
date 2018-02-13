@@ -14,7 +14,7 @@ header
 	position: relative
 	display: flex
 	flex-direction: row
-	justify-content: space-between
+	justify-content: flex-start
 .menu_trigger
 	display: block
 	position: absolute
@@ -44,12 +44,13 @@ header
 		display: flex
 		flex-direction: column
 		justify-content: center
-		list-style: none
+		align-items: center
 		text-align: center
-		margin-top: 200px
+		height: 100vh
 		li
 			+sect_h1($default-bold, 20px, 20px, 4px, uppercase)
 			margin-bottom: 40px
+			overflow: hidden
 			a
 				position: relative
 				color: $col_wh
@@ -74,11 +75,14 @@ header
 	h1
 		color: #fff 
 		margin: 0 0 20px
+		+animation_delay(0.8s)
 		span
 			text-transform: none
+			+animation_delay(0.8s)
 	h3
 		margin-bottom: 70px
-		color: $font_head
+		color: $col_wh
+		+animation_delay(1.0s)
 .lilac
 	text-transform: none
 	color: $font_head_hov
@@ -92,6 +96,7 @@ header
 	border-radius: 5px
 	border-bottom: 4px solid $font_head_bl
 	+transition(all, 0.5s, ease-in-out)
+	+animation_delay(1.2s)
 	&:hover,
 	&:focus
 		background-color: $col_gr

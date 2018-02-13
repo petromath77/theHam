@@ -44,6 +44,8 @@ $(function() {
 			}
 		})
 	//animation//
+	$(".header_text h1").animated("fadeInUp","fadeOutDown");
+	$(".header_text h3").animated("fadeInUp","fadeOutDown");
 	$(".advants h2").animated("fadeInUp","fadeOutDown");
 	$(".about h2").animated("fadeInUp","fadeOutDown");
 	$(".work h2").animated("fadeInUp","fadeOutDown");
@@ -53,9 +55,7 @@ $(function() {
 	$(".advants_wrap").animated("fadeIn","fadeOut"); 
 	$(".tab").animated("fadeIn","fadeOut");  
 	$(".work_menu").animated("slideInLeft","slideOutLeft"); 
-	$(".mix_wrap").animated("slideInUp","slideOutDown"); 
 	$(".carousel_wrap").animated("bounceInLeft","bounceOutLeft"); 
-	$(".team_wrap").animated("slideInUp","slideOutDown"); 
 	$("iframe").animated("bounceInLeft","bounceOutLeft"); 
 	$(".form_wrap").animated("bounceInRight","bounceOutRight"); 
 

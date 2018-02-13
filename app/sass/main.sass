@@ -94,24 +94,42 @@ h5
 section
 	padding: 70px 0 80px
 	text-align: center
-ul
-	list-style-type: none
+ol,ul
 	padding: 0
 	margin: 0
+	list-style: none!important
+header,
+section,
+footer
+	overflow: hidden
+button
+	outline: none
+button
+	&:active
+		outline: none
+button
+	&:focus 
+		outline: none
+    
+
 .clear
 	display: block
     content: ""
     clear: both
 .loader 
 	background: none repeat 0 0 #ccc
-	bottom: 0
 	height: 100%
-	left: 0
 	position: fixed
 	right: 0
+	left: 0
 	top: 0
 	width: 100%
 	z-index: 9999
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
 .loader_inner 
 	background-image: url("../img/preloader.gif")
 	background-size: cover
@@ -120,10 +138,5 @@ ul
 	background-color: #ccc
 	height: 300px
 	width: 300px
-	margin-top: -30px
-	margin-left: -30px
-	left: 42%
-	top: 35%
-	position: absolute
 
 @import "media" // Всегда в конце
